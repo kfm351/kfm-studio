@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <circle cx="256" cy="256" r="244" fill="#C6FF3D" stroke="#111111" stroke-width="16"/>
+  <g transform="translate(256 272) scale(1.15) translate(-256 -256)">
+  <!-- ears -->
+  <path d="M150 238 L166 86 L250 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M172 214 L180 128 L228 176 Z" fill="#F7A8C2"/>
+  <path d="M362 238 L346 86 L262 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M340 214 L332 128 L284 176 Z" fill="#F7A8C2"/>
+  <!-- head -->
+  <path d="M256 140 L332 162 L372 222 L384 288 L412 312 L376 322 L396 350 L354 352 L310 398 L256 414 L202 398 L158 352 L116 350 L136 322 L100 312 L128 288 L140 222 L180 162 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/>
+  <!-- lighter fur plane -->
+  <path d="M256 140 L332 162 L372 222 L256 196 L140 222 L180 162 Z" fill="#3D4260"/>
+  <!-- white mask -->
+  <path d="M256 222 L296 198 L338 232 L352 290 L376 316 L344 326 L322 364 L286 390 L256 398 L226 390 L190 364 L168 326 L136 316 L160 290 L174 232 L216 198 Z" fill="#FFFFFF"/>
+  <path d="M256 398 L226 390 L190 364 L168 326 L256 352 L344 326 L322 364 L286 390 Z" fill="#E4E7F2"/>
+  <!-- forehead blaze -->
+  <path d="M256 150 L280 204 L256 248 L232 204 Z" fill="#2B2E42"/>
+  <!-- brows -->
+  <path d="M196 238 L222 232 L214 246 Z" fill="#FFFFFF"/>
+  <path d="M316 238 L290 232 L298 246 Z" fill="#FFFFFF"/>
+  <!-- eyes -->
+  <path d="M176 278 Q204 254 236 274 Q206 300 176 278 Z" fill="#111111"/>
+  <circle cx="210" cy="277" r="11" fill="#38BDF8"/>
+  <circle cx="210" cy="277" r="5" fill="#0B1020"/>
+  <circle cx="214" cy="272" r="3.5" fill="#FFFFFF"/>
+  <path d="M336 278 Q308 254 276 274 Q306 300 336 278 Z" fill="#111111"/>
+  <circle cx="302" cy="277" r="11" fill="#38BDF8"/>
+  <circle cx="302" cy="277" r="5" fill="#0B1020"/>
+  <circle cx="306" cy="272" r="3.5" fill="#FFFFFF"/>
+  <!-- nose -->
+  <path d="M230 320 Q256 306 282 320 Q274 348 256 352 Q238 348 230 320 Z" fill="#111111"/>
+  <path d="M242 318 Q252 314 260 316" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/>
+  <!-- mouth -->
+  <path d="M256 352 L256 366 M256 366 Q240 382 222 370 M256 366 Q272 382 290 370" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>

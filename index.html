@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KFM studio — сайты, Telegram-боты, приложения и презентации</title>
+<meta name="description" content="Сайты и лендинги, Telegram-боты, приложения, презентации и карточки для маркетплейсов под ключ. Правки включены в цену. Посчитайте стоимость проекта онлайн.">
+<meta property="og:title" content="KFM studio — диджитал, который продаёт">
+<meta property="og:description" content="Сайты, боты, приложения, презентации и карточки WB/Ozon под ключ. Калькулятор стоимости на сайте.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#5B1FE0">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;600;800&display=swap">
+<style>
+:root{--lime:#C6FF3D;--violet:#5B1FE0;--ink:#111;--bg:#F6F3FF;--muted:#C9C9D6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)}
+.display{font-family:Unbounded,sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section[id]{scroll-margin-top:90px}
+h1,h2,h3{margin:0}
+.h2{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(34px,5vw,60px);letter-spacing:-1px;line-height:1}
+.lead{margin:0;font-size:17px;font-weight:600;max-width:440px}
+.sec{padding:64px 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:32px}
+.lift{transition:transform .15s ease,box-shadow .15s ease}
+.lift:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;text-decoration:none;padding:18px 28px;border-radius:18px;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);color:var(--ink);min-height:48px}
+.btn-lime{background:var(--lime)}
+.btn-white{background:#fff}
+.pill{display:inline-block;border:3px solid var(--ink);border-radius:999px;padding:6px 14px;font-weight:800;font-size:14px}
+:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:3px solid var(--ink)}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:1200px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand b{font-family:Unbounded,sans-serif;font-weight:900;font-size:22px;letter-spacing:-.5px}
+.brand b span{color:var(--violet)}
+.menu{display:flex;flex-wrap:wrap;gap:18px;font-weight:800;font-size:15px}
+.menu a{text-decoration:none}
+.menu a:hover{color:var(--violet)}
+.nav-cta{background:var(--ink);color:var(--lime);text-decoration:none;font-weight:800;padding:12px 20px;border-radius:999px;border:3px solid var(--ink);box-shadow:4px 4px 0 var(--violet)}
+@media (max-width:760px){.menu{order:3;width:100%;justify-content:space-between;gap:10px;font-size:14px}.nav-cta{padding:10px 14px;font-size:14px}}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center;padding:64px 20px 48px}
+.hero-text{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.hero h1{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(40px,7vw,92px);line-height:.95;letter-spacing:-2px}
+.hero h1 em{font-style:normal;background:var(--violet);color:#fff;padding:0 12px;border-radius:16px;display:inline-block;transform:rotate(-2deg)}
+.hero p{margin:0;font-size:20px;line-height:1.5;font-weight:600;max-width:560px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{flex:1 1 340px;min-width:0;display:flex;justify-content:center}
+.art{position:relative;width:100%;max-width:440px;aspect-ratio:1/1}
+.blob{position:absolute;inset:6%;background:var(--violet);border:4px solid var(--ink);border-radius:40% 60% 55% 45%/50% 45% 55% 50%;box-shadow:10px 10px 0 var(--ink)}
+.art svg{position:absolute;inset:8%;width:84%;height:84%}
+.sticker{position:absolute;border:3px solid var(--ink);border-radius:14px;padding:8px 12px;font-family:Unbounded,sans-serif;font-weight:700;font-size:14px;box-shadow:4px 4px 0 var(--ink)}
+.st1{top:2%;right:0;background:var(--lime);transform:rotate(6deg)}
+.st2{bottom:4%;left:0;background:#fff;transform:rotate(-5deg)}
+
+/* marquee */
+.marquee{background:var(--ink);color:var(--lime);padding:16px 0;overflow:hidden;transform:rotate(-1.2deg);margin:8px -20px 0}
+.mq{display:flex;gap:48px;white-space:nowrap;width:max-content;animation:mq 28s linear infinite;font-family:Unbounded,sans-serif;font-weight:700;font-size:22px}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.mq{animation:none}.lift,.lift:hover{transition:none;transform:none}html{scroll-behavior:auto}}
+
+/* services */
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{border:3px solid var(--ink);border-radius:24px;padding:26px;box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column;gap:12px;min-height:220px}
+.card .num{font-family:Unbounded,sans-serif;font-weight:900;font-size:15px;opacity:.8}
+.card h3{font-family:Unbounded,sans-serif;font-weight:700;font-size:22px;line-height:1.15}
+.card p{margin:0;font-size:15px;line-height:1.5;font-weight:600;flex-grow:1}
+.card .price{font-family:Unbounded,sans-serif;font-weight:700;font-size:18px}
+
+/* calculator */
+.calc{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start}
+.calc-main{flex:999 1 560px;min-width:0;background:#fff;border:3px solid var(--ink);border-radius:28px;padding:28px;box-shadow:8px 8px 0 var(--ink);display:flex;flex-direction:column;gap:26px}
+.step-title{font-family:Unbounded,sans-serif;font-weight:700;font-size:16px;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font:800 15px Manrope,sans-serif;padding:12px 18px;min-height:48px;border-radius:999px;border:3px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--violet);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+.extras{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.extra{font:800 15px Manrope,sans-serif;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:14px 16px;min-height:52px;border-radius:16px;border:3px solid var(--ink);background:var(--bg);color:var(--ink);cursor:pointer}
+.extra[aria-pressed="true"]{background:var(--lime);box-shadow:3px 3px 0 var(--ink)}
+.extra span:last-child{white-space:nowrap}
+.calc-side{flex:1 1 320px;min-width:0;background:var(--ink);color:#fff;border:3px solid var(--ink);border-radius:28px;padding:28px;box-shadow:8px 8px 0 var(--violet);display:flex;flex-direction:column;gap:16px;position:sticky;top:100px}
+.calc-side .label{font-size:15px;font-weight:800;color:var(--lime)}
+.total{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(40px,5vw,56px);line-height:1}
+.old{font-size:16px;font-weight:600;text-decoration:line-through;opacity:.7}
+.lines{border-top:2px dashed #555;padding-top:16px;display:flex;flex-direction:column;gap:10px;font-size:16px;font-weight:600}
+.lines div{display:flex;justify-content:space-between;gap:10px}
+.lines b{font-weight:800}
+.note{margin:0;font-size:13px;line-height:1.5;color:var(--muted)}
+.calc-side .btn{border-color:#fff;box-shadow:none;font-size:17px;text-align:center}
+@media (max-width:900px){.calc-side{position:static}}
+
+/* steps */
+.stepcard{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:10px}
+.stepcard .n{width:52px;height:52px;border-radius:50%;border:3px solid var(--ink);display:flex;align-items:center;justify-content:center;font-family:Unbounded,sans-serif;font-weight:900;font-size:20px}
+.stepcard h3{font-family:Unbounded,sans-serif;font-weight:700;font-size:19px}
+.stepcard p{margin:0;font-size:15px;line-height:1.5;font-weight:600}
+
+/* works */
+.works{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+@media (max-width:380px){.works{grid-template-columns:1fr}}
+.work{background:#fff;border:3px solid var(--ink);border-radius:24px;overflow:hidden;box-shadow:6px 6px 0 var(--ink);display:flex;flex-direction:column}
+.stage{border-bottom:3px solid var(--ink);height:290px;padding:22px;display:flex;align-items:center;justify-content:center}
+.work-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px;flex-grow:1}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{border:2px solid var(--ink);border-radius:999px;padding:3px 10px;font-size:12px;font-weight:800;background:var(--bg)}
+.tag.dark{background:var(--ink);color:#fff}
+.work h3{font-family:Unbounded,sans-serif;font-weight:700;font-size:19px}
+.work p{margin:0;font-size:15px;line-height:1.5;font-weight:600}
+.want{margin-top:auto;align-self:flex-start;font-weight:800;font-size:16px;text-decoration:none;border-bottom:3px solid var(--violet);padding:6px 0}
+/* mockups */
+.browser{width:100%;max-width:330px;background:#fff;border:3px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:5px 5px 0 var(--ink)}
+.bar{display:flex;align-items:center;gap:5px;padding:7px 10px;border-bottom:2px solid var(--ink);background:#F1F1F4}
+.dot{width:9px;height:9px;border-radius:50%}
+.url{margin-left:8px;flex-grow:1;background:#fff;border:2px solid var(--ink);border-radius:999px;font-size:10px;font-weight:700;padding:2px 10px;color:#444}
+.site{padding:14px;display:flex;flex-direction:column;gap:12px}
+.site-top{display:flex;justify-content:space-between;align-items:center;font-size:9px;font-weight:800}
+.site-top b{font-family:Unbounded,sans-serif;font-weight:900;font-size:12px}
+.site-hero{display:flex;gap:12px;align-items:center}
+.site-hero .t{flex:1;display:flex;flex-direction:column;gap:7px}
+.site-hero .t strong{font-family:Unbounded,sans-serif;font-weight:900;font-size:16px;line-height:1.1}
+.ln{height:6px;border-radius:4px;opacity:.25}
+.mini-btn{align-self:flex-start;margin-top:4px;color:#111;border:2px solid #111;font-size:10px;font-weight:800;padding:6px 12px;border-radius:999px}
+.emblem{width:86px;height:86px;border-radius:50%;border:2px solid #111;display:flex;align-items:center;justify-content:center;font-family:Unbounded,sans-serif;font-weight:900;font-size:26px;color:#111;flex-shrink:0}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tiles span{height:38px;border-radius:8px;opacity:.1}
+.phone{width:176px;height:250px;background:#111;border-radius:30px;padding:8px;box-shadow:6px 6px 0 rgba(0,0,0,.35)}
+.screen{height:100%;border-radius:23px;overflow:hidden;display:flex;flex-direction:column;color:#111}
+.chat-head{background:#fff;padding:9px 10px;font-size:10px;font-weight:800;display:flex;gap:6px;align-items:center}
+.chat-head i{width:20px;height:20px;border-radius:50%;background:var(--lime);border:2px solid #111}
+.chat{padding:8px;display:flex;flex-direction:column;gap:6px;font-size:9.5px;font-weight:700}
+.in{align-self:flex-start;background:#fff;padding:6px 8px;border-radius:10px 10px 10px 3px;max-width:85%}
+.out{align-self:flex-end;background:#D3F5B9;padding:6px 8px;border-radius:10px 10px 3px 10px}
+.kb{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.kb span{background:#fff;border:1.5px solid #5B8DEF;color:#1F4FB8;text-align:center;padding:5px 2px;border-radius:8px}
+.app{padding:14px 12px;gap:8px;background:#fff}
+.habit{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:700;background:var(--bg);padding:6px;border-radius:8px}
+.box{width:14px;height:14px;border-radius:4px;background:var(--violet);color:#fff;font-size:9px;display:flex;align-items:center;justify-content:center}
+.box.empty{background:none;border:2px solid #111}
+.product{width:190px;height:245px;background:#fff;border:3px solid #111;border-radius:14px;box-shadow:5px 5px 0 #111;display:flex;flex-direction:column;padding:12px;gap:6px;color:#0A3D62}
+.slide{width:100%;max-width:330px;aspect-ratio:16/9;background:#111;color:#fff;border:3px solid #111;border-radius:12px;padding:16px;display:flex;gap:14px;box-shadow:5px 5px 0 rgba(0,0,0,.35)}
+.bars{width:42%;display:flex;align-items:flex-end;gap:6px;border-bottom:2px solid #555;padding-bottom:2px}
+.bars span{flex:1;border-radius:3px 3px 0 0}
+
+/* about */
+.about{background:var(--violet);color:#fff;border:3px solid var(--ink);border-radius:32px;padding:clamp(24px,5vw,56px);box-shadow:10px 10px 0 var(--ink);display:flex;flex-wrap:wrap;gap:36px;align-items:center}
+.about-art{flex:0 1 240px;display:flex;justify-content:center}
+.about-art svg{width:220px;height:220px;filter:drop-shadow(8px 8px 0 #111)}
+.about-text{flex:999 1 420px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.about h2{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(30px,4vw,48px);line-height:1.05}
+.about p{margin:0;font-size:18px;line-height:1.6;font-weight:600}
+.about .pill{background:#fff;color:var(--ink)}
+
+/* reviews */
+.rev{display:flex;flex-wrap:wrap;gap:24px}
+.rev-main{flex:999 1 520px;min-width:0;background:var(--lime);border:3px solid var(--ink);border-radius:28px;padding:32px;box-shadow:8px 8px 0 var(--ink);display:flex;flex-direction:column;gap:16px}
+.rev-main strong{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(26px,3.4vw,40px);line-height:1.1}
+.rev-main p{margin:0;font-size:18px;line-height:1.55;font-weight:600}
+.rev-main .btn{align-self:flex-start;background:var(--ink);color:var(--lime);box-shadow:none;font-size:17px}
+.spots{flex:1 1 260px;min-width:0;background:var(--ink);color:#fff;border:3px solid var(--ink);border-radius:28px;padding:32px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;text-align:center}
+.spots .big{font-family:Unbounded,sans-serif;font-weight:900;font-size:120px;line-height:1;color:var(--lime)}
+
+/* faq */
+details{background:#fff;border:3px solid var(--ink);border-radius:20px;padding:20px 24px;box-shadow:4px 4px 0 var(--ink);margin-bottom:16px}
+summary{cursor:pointer;list-style:none;font-family:Unbounded,sans-serif;font-weight:700;font-size:18px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--violet);font-size:24px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin:14px 0 0;font-size:16px;line-height:1.6;font-weight:600}
+
+/* contacts */
+.contacts{background:var(--ink);color:#fff;margin-top:48px}
+.contacts .wrap{padding-top:80px;padding-bottom:40px;display:flex;flex-direction:column;gap:36px}
+.contacts h2{font-family:Unbounded,sans-serif;font-weight:900;font-size:clamp(40px,7vw,96px);letter-spacing:-2px;line-height:.95}
+.contacts h2 span{color:var(--lime)}
+.contacts .sub{margin:0;font-size:19px;font-weight:600;max-width:600px;color:#DCDCE6}
+.ccard{text-decoration:none;border:3px solid #fff;border-radius:24px;padding:26px;display:flex;flex-direction:column;gap:8px}
+.ccard b{font-family:Unbounded,sans-serif;font-weight:900;font-size:26px}
+.ccard span{font-weight:800;font-size:17px}
+.ccard.lift:hover{box-shadow:9px 9px 0 var(--lime)}
+footer{border-top:2px solid #333;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;font-weight:600;color:#B8B8C6}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top" aria-label="KFM studio — на главную">
+      <svg width="46" height="46" viewBox="0 0 512 512" aria-hidden="true"><circle cx="256" cy="256" r="244" fill="#C6FF3D" stroke="#111111" stroke-width="16"/> <g transform="translate(256 272) scale(1.15) translate(-256 -256)"> <path d="M150 238 L166 86 L250 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M172 214 L180 128 L228 176 Z" fill="#F7A8C2"/> <path d="M362 238 L346 86 L262 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M340 214 L332 128 L284 176 Z" fill="#F7A8C2"/> <path d="M256 140 L332 162 L372 222 L384 288 L412 312 L376 322 L396 350 L354 352 L310 398 L256 414 L202 398 L158 352 L116 350 L136 322 L100 312 L128 288 L140 222 L180 162 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M256 140 L332 162 L372 222 L256 196 L140 222 L180 162 Z" fill="#3D4260"/> <path d="M256 222 L296 198 L338 232 L352 290 L376 316 L344 326 L322 364 L286 390 L256 398 L226 390 L190 364 L168 326 L136 316 L160 290 L174 232 L216 198 Z" fill="#FFFFFF"/> <path d="M256 398 L226 390 L190 364 L168 326 L256 352 L344 326 L322 364 L286 390 Z" fill="#E4E7F2"/> <path d="M256 150 L280 204 L256 248 L232 204 Z" fill="#2B2E42"/> <path d="M196 238 L222 232 L214 246 Z" fill="#FFFFFF"/> <path d="M316 238 L290 232 L298 246 Z" fill="#FFFFFF"/> <path d="M176 278 Q204 254 236 274 Q206 300 176 278 Z" fill="#111111"/> <circle cx="210" cy="277" r="11" fill="#38BDF8"/> <circle cx="210" cy="277" r="5" fill="#0B1020"/> <circle cx="214" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M336 278 Q308 254 276 274 Q306 300 336 278 Z" fill="#111111"/> <circle cx="302" cy="277" r="11" fill="#38BDF8"/> <circle cx="302" cy="277" r="5" fill="#0B1020"/> <circle cx="306" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M230 320 Q256 306 282 320 Q274 348 256 352 Q238 348 230 320 Z" fill="#111111"/> <path d="M242 318 Q252 314 260 316" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/> <path d="M256 352 L256 366 M256 366 Q240 382 222 370 M256 366 Q272 382 290 370" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/> </g></svg>
+      <b>KFM<span>studio</span></b>
+    </a>
+    <nav class="menu" aria-label="Разделы">
+      <a href="#services">Услуги</a>
+      <a href="#calc">Калькулятор</a>
+      <a href="#works">Работы</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="nav-cta lift" href="#calc">Посчитать проект</a>
+  </div>
+</header>
+
+<main>
+<section id="top" class="wrap hero">
+  <div class="hero-text">
+    <div class="row">
+      <span class="pill" style="background:var(--lime)">Работаю онлайн с любым городом</span>
+      <span class="pill" style="background:#fff">Самозанятая · чек на каждую оплату</span>
+    </div>
+    <h1>Делаю диджитал, который <em>продаёт</em>, а не пылится</h1>
+    <p>Сайты, Telegram-боты, приложения, презентации и карточки для маркетплейсов. Под ключ, с правками в цене и без «ой, а это за доплату».</p>
+    <div class="row">
+      <a class="btn btn-lime lift" href="#calc">Узнать цену за 30 секунд</a>
+      <a class="btn btn-white lift" href="https://t.me/KFM240" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="art">
+      <div class="blob"></div>
+      <svg viewBox="0 0 512 512" role="img" aria-label="Логотип KFM studio: хаски"><circle cx="256" cy="256" r="244" fill="#C6FF3D" stroke="#111111" stroke-width="16"/> <g transform="translate(256 272) scale(1.15) translate(-256 -256)"> <path d="M150 238 L166 86 L250 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M172 214 L180 128 L228 176 Z" fill="#F7A8C2"/> <path d="M362 238 L346 86 L262 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M340 214 L332 128 L284 176 Z" fill="#F7A8C2"/> <path d="M256 140 L332 162 L372 222 L384 288 L412 312 L376 322 L396 350 L354 352 L310 398 L256 414 L202 398 L158 352 L116 350 L136 322 L100 312 L128 288 L140 222 L180 162 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M256 140 L332 162 L372 222 L256 196 L140 222 L180 162 Z" fill="#3D4260"/> <path d="M256 222 L296 198 L338 232 L352 290 L376 316 L344 326 L322 364 L286 390 L256 398 L226 390 L190 364 L168 326 L136 316 L160 290 L174 232 L216 198 Z" fill="#FFFFFF"/> <path d="M256 398 L226 390 L190 364 L168 326 L256 352 L344 326 L322 364 L286 390 Z" fill="#E4E7F2"/> <path d="M256 150 L280 204 L256 248 L232 204 Z" fill="#2B2E42"/> <path d="M196 238 L222 232 L214 246 Z" fill="#FFFFFF"/> <path d="M316 238 L290 232 L298 246 Z" fill="#FFFFFF"/> <path d="M176 278 Q204 254 236 274 Q206 300 176 278 Z" fill="#111111"/> <circle cx="210" cy="277" r="11" fill="#38BDF8"/> <circle cx="210" cy="277" r="5" fill="#0B1020"/> <circle cx="214" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M336 278 Q308 254 276 274 Q306 300 336 278 Z" fill="#111111"/> <circle cx="302" cy="277" r="11" fill="#38BDF8"/> <circle cx="302" cy="277" r="5" fill="#0B1020"/> <circle cx="306" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M230 320 Q256 306 282 320 Q274 348 256 352 Q238 348 230 320 Z" fill="#111111"/> <path d="M242 318 Q252 314 260 316" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/> <path d="M256 352 L256 366 M256 366 Q240 382 222 370 M256 366 Q272 382 290 370" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/> </g></svg>
+      <div class="sticker st1">Лендинг от 7 дней</div>
+      <div class="sticker st2">Правки уже в цене</div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="mq">
+    <span>САЙТЫ ✦ ЛЕНДИНГИ ✦ TELEGRAM-БОТЫ ✦ ПРИЛОЖЕНИЯ ✦ ПРЕЗЕНТАЦИИ ✦ КАРТОЧКИ WB / OZON ✦ ОБУЧЕНИЕ ✦ ШАБЛОНЫ ✦</span>
+    <span>САЙТЫ ✦ ЛЕНДИНГИ ✦ TELEGRAM-БОТЫ ✦ ПРИЛОЖЕНИЯ ✦ ПРЕЗЕНТАЦИИ ✦ КАРТОЧКИ WB / OZON ✦ ОБУЧЕНИЕ ✦ ШАБЛОНЫ ✦</span>
+  </div>
+</div>
+
+<section id="services" class="wrap sec" style="padding-top:96px">
+  <div class="sec-head">
+    <h2 class="h2">Что я делаю</h2>
+    <p class="lead">Один человек, восемь суперспособностей. Выбирай, что нужно, или приходи с задачей — подскажу, как решить дешевле.</p>
+  </div>
+  <div class="grid" id="serviceCards"></div>
+</section>
+
+<section id="calc" class="wrap sec">
+  <h2 class="h2" style="margin-bottom:28px">Посчитай <span style="color:var(--violet)">свой проект</span></h2>
+  <div class="calc">
+    <div class="calc-main">
+      <div><div class="step-title">1. Что делаем?</div><div class="chips" id="svcChips"></div></div>
+      <div><div class="step-title">2. Что добавить?</div><div class="extras" id="extraList"></div></div>
+      <div><div class="step-title">3. Особые условия</div>
+        <div class="chips">
+          <button type="button" class="chip" id="urgent" aria-pressed="false">+ Срочно — в 1,5 раза быстрее (+30%)</button>
+          <button type="button" class="chip" id="first" aria-pressed="false">+ Я из первых 5 клиентов (−30% за честный отзыв)</button>
+        </div>
+      </div>
+    </div>
+    <aside class="calc-side" aria-live="polite">
+      <div class="label">ОРИЕНТИРОВОЧНАЯ СТОИМОСТЬ</div>
+      <div class="total" id="total">—</div>
+      <div class="old" id="old" hidden></div>
+      <div class="lines">
+        <div><span>Предоплата 50%</span><b id="prepay" style="color:var(--lime)">—</b></div>
+        <div><span>Срок</span><b id="days">—</b></div>
+        <div><span>Правки</span><b>включены</b></div>
+      </div>
+      <p class="note">Точная цена — после короткого созвона и ТЗ. Домен и хостинг оплачиваются отдельно напрямую провайдеру.</p>
+      <a class="btn btn-lime lift" id="sendCalc" href="https://t.me/KFM240" target="_blank" rel="noopener">Хочу так! Обсудить проект</a>
+      <p class="note" id="copied" hidden>Расчёт скопирован — вставь его в сообщение.</p>
+    </aside>
+  </div>
+</section>
+
+<section class="wrap sec">
+  <h2 class="h2" style="margin-bottom:32px">Как работаем</h2>
+  <div class="grid" id="steps" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))"></div>
+</section>
+
+<section id="works" class="wrap sec">
+  <div class="sec-head">
+    <h2 class="h2">Посмотри, как это выглядит</h2>
+    <p class="lead">Примеры в разных нишах — от кофейни до стартапа. Нашёл похожее на свою задачу? Жми «Хочу такой», и сделаю под твой бизнес.</p>
+  </div>
+  <div class="works" id="works-list"></div>
+</section>
+
+<section id="about" class="wrap sec">
+  <div class="about">
+    <div class="about-art"><svg viewBox="0 0 512 512" role="img" aria-label="Хаски KFM studio"><circle cx="256" cy="256" r="244" fill="#C6FF3D" stroke="#111111" stroke-width="16"/> <g transform="translate(256 272) scale(1.15) translate(-256 -256)"> <path d="M150 238 L166 86 L250 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M172 214 L180 128 L228 176 Z" fill="#F7A8C2"/> <path d="M362 238 L346 86 L262 168 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M340 214 L332 128 L284 176 Z" fill="#F7A8C2"/> <path d="M256 140 L332 162 L372 222 L384 288 L412 312 L376 322 L396 350 L354 352 L310 398 L256 414 L202 398 L158 352 L116 350 L136 322 L100 312 L128 288 L140 222 L180 162 Z" fill="#2B2E42" stroke="#111111" stroke-width="10" stroke-linejoin="round"/> <path d="M256 140 L332 162 L372 222 L256 196 L140 222 L180 162 Z" fill="#3D4260"/> <path d="M256 222 L296 198 L338 232 L352 290 L376 316 L344 326 L322 364 L286 390 L256 398 L226 390 L190 364 L168 326 L136 316 L160 290 L174 232 L216 198 Z" fill="#FFFFFF"/> <path d="M256 398 L226 390 L190 364 L168 326 L256 352 L344 326 L322 364 L286 390 Z" fill="#E4E7F2"/> <path d="M256 150 L280 204 L256 248 L232 204 Z" fill="#2B2E42"/> <path d="M196 238 L222 232 L214 246 Z" fill="#FFFFFF"/> <path d="M316 238 L290 232 L298 246 Z" fill="#FFFFFF"/> <path d="M176 278 Q204 254 236 274 Q206 300 176 278 Z" fill="#111111"/> <circle cx="210" cy="277" r="11" fill="#38BDF8"/> <circle cx="210" cy="277" r="5" fill="#0B1020"/> <circle cx="214" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M336 278 Q308 254 276 274 Q306 300 336 278 Z" fill="#111111"/> <circle cx="302" cy="277" r="11" fill="#38BDF8"/> <circle cx="302" cy="277" r="5" fill="#0B1020"/> <circle cx="306" cy="272" r="3.5" fill="#FFFFFF"/> <path d="M230 320 Q256 306 282 320 Q274 348 256 352 Q238 348 230 320 Z" fill="#111111"/> <path d="M242 318 Q252 314 260 316" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.6"/> <path d="M256 352 L256 366 M256 366 Q240 382 222 370 M256 366 Q272 382 290 370" stroke="#111111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/> </g></svg></div>
+    <div class="about-text">
+      <div style="font-weight:800;color:var(--lime);font-size:15px">КТО ЗА ЭТИМ СТОИТ</div>
+      <h2>Привет! Я Элина, она же KFM</h2>
+      <p>Программист по образованию и преподаватель программирования. Днём объясняю детям, как устроен код и ИИ, вечером собираю сайты, ботов и приложения для бизнеса. Умею говорить с заказчиком на человеческом языке — это профдеформация учителя, и вам она только на руку.</p>
+      <div class="row">
+        <span class="pill">Диплом программиста</span>
+        <span class="pill">Учу детей коду и ИИ</span>
+        <span class="pill">Пишу код сама, без шаблонной каши</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="wrap sec">
+  <h2 class="h2" style="margin-bottom:28px">Отзывы</h2>
+  <div class="rev">
+    <div class="rev-main">
+      <strong>Здесь может быть твой отзыв. Серьёзно.</strong>
+      <p>Студия только стартует, поэтому первым клиентам — скидка 30% в обмен на честный отзыв после сдачи проекта. Тебе выгода, мне — твоё мнение здесь, на этом самом месте.</p>
+      <a class="btn lift" href="https://t.me/KFM240" target="_blank" rel="noopener">Забрать место со скидкой</a>
+    </div>
+    <div class="spots">
+      <div style="font-weight:800;color:var(--lime);font-size:15px">СВОБОДНЫХ МЕСТ</div>
+      <div class="big" id="spotsBig">5</div>
+      <div style="font-weight:600;font-size:15px">из 5 со скидкой −30%</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="max-width:900px;margin:0 auto;padding-left:20px;padding-right:20px">
+  <h2 class="h2" style="margin-bottom:24px">Частые вопросы</h2>
+  <div id="faq"></div>
+</section>
+</main>
+
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <h2>Погнали <span>делать</span><br>что-то крутое?</h2>
+    <p class="sub">Пиши куда удобно — отвечаю в течение дня. Опиши задачу парой фраз или просто скинь результат калькулятора.</p>
+    <div class="grid">
+      <a class="ccard lift" href="https://t.me/KFM240" target="_blank" rel="noopener" style="background:var(--lime);color:var(--ink);box-shadow:6px 6px 0 var(--violet)"><b>Telegram</b><span>@KFM240</span></a>
+      <a class="ccard lift" href="tel:+79534944021" style="background:var(--violet);color:#fff;box-shadow:6px 6px 0 var(--lime)"><b>Макс</b><span>+7 953 494-40-21</span></a>
+      <a class="ccard lift" href="https://profi.ru/profile/GavrilovaEO7/" target="_blank" rel="noopener" style="background:#fff;color:var(--ink);box-shadow:6px 6px 0 var(--lime)"><b>Профи.ру</b><span>Отзывы и безопасная сделка</span></a>
+    </div>
+    <footer>
+      <span>© <span id="year">2026</span> KFM studio · Элина, самозанятая</span>
+      <span>Сделано с кодом, кофе и хаски</span>
+    </footer>
+  </div>
+</section>
+
+<script>
+(function(){
+  // === НАСТРОЙКИ: меняй цифры и тексты здесь ===
+  var SPOTS_LEFT = 5; // сколько мест со скидкой −30% осталось (поставь 0, чтобы спрятать скидку)
+  var TG = 'KFM240';
+
+  var SERVICES = [
+    { id:'landing', name:'Лендинг', base:9000, days:'7–10 дней', extras:[
+      ['design','Уникальный дизайн с нуля',4000],['anim','Анимации и «вау»-эффекты',3000],['tg','Заявки сразу в Telegram',1500],['copy','Тексты под ключ',2500],['support','Поддержка 1 месяц',2000]]},
+    { id:'site', name:'Многостраничный сайт', base:20000, days:'2–3 недели', extras:[
+      ['blog','Блог / новости',5000],['cab','Личный кабинет',15000],['lang','Вторая языковая версия',6000],['seo','Базовое SEO',4000],['support','Поддержка 1 месяц',3000]]},
+    { id:'shop', name:'Интернет-магазин', base:35000, days:'3–4 недели', extras:[
+      ['pay','Онлайн-оплата',6000],['crm','Интеграция с CRM',8000],['import','Импорт каталога',4000],['support','Поддержка 1 месяц',4000]]},
+    { id:'bot', name:'Telegram-бот', base:7000, days:'5–10 дней', extras:[
+      ['pay','Приём оплаты',5000],['admin','Админ-панель',6000],['db','База данных клиентов',4000],['mail','Рассылки',3000]]},
+    { id:'app', name:'Приложение (ПК / мобильное)', base:45000, days:'от 4 недель', extras:[
+      ['both','iOS + Android сразу',25000],['auth','Регистрация и вход',8000],['push','Push-уведомления',5000],['admin','Админка',12000]]},
+    { id:'pres', name:'Презентация', base:3000, days:'2–4 дня', extras:[
+      ['more','До 20 слайдов',3000],['info','Инфографика',2000],['anim','Анимации переходов',1500]]},
+    { id:'cards', name:'Карточки WB / Ozon', base:3500, days:'3–5 дней', extras:[
+      ['more','Ещё 5 карточек',3000],['info','Инфографика на слайдах',1500],['rich','Rich-контент',2500]]},
+    { id:'edu', name:'Обучение', base:6000, days:'4 занятия', extras:[
+      ['more','Ещё 4 занятия',5500],['proj','Свой проект в портфолио',3000],['rec','Записи занятий',1000]]}
+  ];
+
+  var CARDS = [
+    ['01','Сайты и лендинги','Кодом или на Тильде. Одностраничники, многостраничники, магазины. Адаптив под телефон по умолчанию.','от 9 000 ₽','var(--lime)','#111'],
+    ['02','Telegram-боты','Запись клиентов, приём оплаты, рассылки, админка. Пишу на Python.','от 7 000 ₽','#fff','#111'],
+    ['03','Приложения','Программы для компьютера и мобильные приложения — от идеи до установочного файла.','от 45 000 ₽','var(--violet)','#fff'],
+    ['04','Дизайн сайтов','Макет, который не стыдно показать: структура, стиль, прототип.','от 6 000 ₽','#fff','#111'],
+    ['05','Презентации','Для защиты, инвесторов и продаж. Красиво, понятно, без стены текста.','от 3 000 ₽','#111','#fff'],
+    ['06','Карточки WB / Ozon','Инфографика, которая останавливает палец на ленте маркетплейса.','от 3 500 ₽','var(--lime)','#111'],
+    ['07','Обучение','Индивидуальные занятия по программированию и нейросетям для детей и взрослых.','от 1 500 ₽ / занятие','#fff','#111'],
+    ['08','Шаблоны и поддержка','Готовые шаблоны сайтов и презентаций, сопровождение и правки уже работающих сайтов.','от 990 ₽','var(--violet)','#fff']
+  ];
+
+  var STEPS = [
+    ['1','Заявка','Пишешь в Telegram, Макс или на Профи.ру. Можно просто скинуть сумму из калькулятора.','var(--lime)','#111'],
+    ['2','Созвон и ТЗ','Разбираемся в задаче за 15–20 минут, фиксирую цену и сроки письменно.','#fff','#111'],
+    ['3','Предоплата 50%','Стартую после предоплаты. Чек самозанятой — автоматически.','var(--violet)','#fff'],
+    ['4','Сдача и правки','Показываю результат, вношу правки — они уже в цене. Остаток 50% после сдачи.','#111','#fff']
+  ];
+
+  var FAQ = [
+    ['Что входит в цену?','Работа под ключ и правки по согласованному ТЗ. Домен и хостинг оплачиваются отдельно напрямую провайдеру — помогу выбрать и всё подключу.'],
+    ['Как проходит оплата?','50% предоплата перед стартом, 50% после сдачи. Я самозанятая, так что на каждую оплату — официальный чек.'],
+    ['Сколько времени займёт проект?','Лендинг — от недели, бот — от 5 дней, презентация — 2–4 дня. Точный срок фиксирую после созвона.'],
+    ['А если мне не понравится?','Сначала согласуем структуру и стиль, потом делаю. Правки включены в цену, так что доводим до результата, который нравится.'],
+    ['Можно работать полностью онлайн?','Да, работаю с клиентами из любого города. Всё общение — в мессенджерах и по видеосвязи.']
+  ];
+
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(t){ return String(t).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+  var fmt = function(n){ return Math.round(n).toLocaleString('ru-RU') + ' ₽'; };
+
+  // services cards
+  $('serviceCards').innerHTML = CARDS.map(function(c){
+    return '<article class="card lift" style="background:'+c[4]+';color:'+c[5]+'"><div class="num">'+c[0]+'</div><h3>'+esc(c[1])+'</h3><p>'+esc(c[2])+'</p><div class="price">'+esc(c[3])+'</div></article>';
+  }).join('');
+
+  // steps
+  $('steps').innerHTML = STEPS.map(function(s){
+    return '<div class="stepcard"><div class="n" style="background:'+s[3]+';color:'+s[4]+'">'+s[0]+'</div><h3>'+esc(s[1])+'</h3><p>'+esc(s[2])+'</p></div>';
+  }).join('');
+
+  // faq
+  $('faq').innerHTML = FAQ.map(function(q){ return '<details><summary>'+esc(q[0])+'</summary><p>'+esc(q[1])+'</p></details>'; }).join('');
+
+  // works
+  function siteMock(w){
+    return '<div class="browser"><div class="bar"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span><span class="url">'+w.url+'</span></div>'+
+      '<div class="site" style="background:'+w.siteBg+';color:'+w.fg+'"><div class="site-top"><b>'+w.brand+'</b><span>Меню&nbsp;&nbsp;О нас&nbsp;&nbsp;Контакты</span></div>'+
+      '<div class="site-hero"><div class="t"><strong>'+w.headline+'</strong><span class="ln" style="width:85%;background:'+w.fg+'"></span><span class="ln" style="width:60%;background:'+w.fg+'"></span><span class="mini-btn" style="background:'+w.accent+'">'+w.cta+'</span></div><div class="emblem" style="background:'+w.accent+'">'+w.emblem+'</div></div>'+
+      '<div class="tiles"><span style="background:'+w.fg+'"></span><span style="background:'+w.fg+'"></span><span style="background:'+w.fg+'"></span></div></div></div>';
+  }
+  var chatMock = '<div class="phone"><div class="screen" style="background:#DDE7F2"><div class="chat-head"><i></i>Barber Bot</div><div class="chat">'+
+    '<span class="in">Привет! На что записать?</span><span class="kb"><span>Стрижка</span><span>Борода</span></span><span class="out">Стрижка</span>'+
+    '<span class="in">Свободно завтра в 14:00. Записываю?</span><span class="kb"><span>Да!</span><span>Другое время</span></span></div></div></div>';
+  var appMock = '<div class="phone"><div class="screen app"><span style="font-size:9px;font-weight:800;color:#555">ЧЕТВЕРГ</span><span class="display" style="font-weight:900;font-size:16px">Сегодня</span>'+
+    '<span style="height:8px;border-radius:6px;background:#EEE;overflow:hidden;display:flex"><span style="width:75%;background:var(--lime);border-right:2px solid #111"></span></span><span style="font-size:9px;font-weight:800">3 из 4 привычек</span>'+
+    '<span class="habit"><span class="box">✓</span>Вода 2 литра</span><span class="habit"><span class="box">✓</span>Зарядка</span><span class="habit"><span class="box">✓</span>Чтение 20 мин</span><span class="habit"><span class="box empty"></span>Сон до 23:00</span></div></div>';
+  var productMock = '<div class="product"><span class="display" style="font-weight:900;font-size:15px;line-height:1.05">ДЕРЖИТ ТЕПЛО</span><span class="display" style="align-self:flex-start;background:var(--lime);color:#111;border:2px solid #111;border-radius:8px;font-weight:900;font-size:13px;padding:2px 8px">8 ЧАСОВ</span>'+
+    '<svg viewBox="0 0 120 110" width="120" height="110" style="align-self:center"><path d="M40 18 C40 10 44 6 48 6 M58 18 C58 10 62 6 66 6 M76 18 C76 10 80 6 84 6" fill="none" stroke="#8FB8D8" stroke-width="3" stroke-linecap="round"/><rect x="30" y="24" width="60" height="80" rx="12" fill="#2E86C1" stroke="#111" stroke-width="3"/><rect x="30" y="24" width="60" height="14" rx="6" fill="#D6EAF8" stroke="#111" stroke-width="3"/><path d="M90 44 C108 44 108 80 90 80" fill="none" stroke="#111" stroke-width="7"/><path d="M90 44 C108 44 108 80 90 80" fill="none" stroke="#2E86C1" stroke-width="3"/></svg>'+
+    '<span style="display:flex;gap:4px;flex-wrap:wrap;font-size:9px;font-weight:800"><span style="background:#D6F1FF;border-radius:6px;padding:3px 6px">350 мл</span><span style="background:#D6F1FF;border-radius:6px;padding:3px 6px">Не протекает</span></span></div>';
+  var slideMock = '<div class="slide"><div style="flex:1;display:flex;flex-direction:column;gap:8px"><span style="font-size:9px;font-weight:800;color:var(--lime)">PITCH · 04 / 12</span><span class="display" style="font-weight:900;font-size:15px;line-height:1.1">Как продукт растёт</span><span class="ln" style="width:90%;background:#fff;opacity:.3"></span><span class="ln" style="width:70%;background:#fff;opacity:.3"></span></div>'+
+    '<div class="bars"><span style="height:25%;background:#fff;opacity:.35"></span><span style="height:40%;background:#fff;opacity:.5"></span><span style="height:65%;background:var(--violet)"></span><span style="height:95%;background:var(--lime)"></span></div></div>';
+
+  var WORKS = [
+    {mock:siteMock({url:'zerno-coffee.ru',siteBg:'#FFF8EF',fg:'#3B1F0E',accent:'#FFB36B',brand:'ЗЕРНО',headline:'Кофе, ради которого встают пораньше',cta:'Забронировать',emblem:'З'}), bg:'#FFE3C2', kind:'Лендинг', title:'Сайт для кофейни', text:'Меню, бронь столика, карта проезда и заявки сразу в Telegram.', price:'от 9 000 ₽'},
+    {mock:chatMock, bg:'#23232D', kind:'Telegram-бот', title:'Бот записи для барбершопа', text:'Клиент сам выбирает услугу и время, бот напоминает о визите.', price:'от 7 000 ₽'},
+    {mock:siteMock({url:'svecha-shop.ru',siteBg:'#FBF8FF',fg:'#3A1670',accent:'#FFD45C',brand:'СВЕЧА.',headline:'Тёплый дом в одной банке',cta:'В корзину',emblem:'С'}), bg:'#E6DAFF', kind:'Интернет-магазин', title:'Магазин свечей ручной работы', text:'Каталог, корзина, онлайн-оплата и расчёт доставки.', price:'от 35 000 ₽'},
+    {mock:productMock, bg:'#CDEBFF', kind:'Карточки WB / Ozon', title:'Карточки для термокружки', text:'Инфографика, которая объясняет товар за секунду в ленте.', price:'от 3 500 ₽'},
+    {mock:appMock, bg:'var(--violet)', kind:'Мобильное приложение', title:'Трекер привычек', text:'Привычки, напоминания и прогресс за день в одном экране.', price:'от 45 000 ₽'},
+    {mock:slideMock, bg:'var(--lime)', kind:'Презентация', title:'Питч для инвесторов', text:'История продукта, графики и чистый дизайн без стены текста.', price:'от 3 000 ₽'}
+  ];
+  $('works-list').innerHTML = WORKS.map(function(w){
+    return '<article class="work lift"><div class="stage" aria-hidden="true" style="background:'+w.bg+'">'+w.mock+'</div><div class="work-body"><div class="tags"><span class="tag dark">'+w.kind+'</span><span class="tag">концепт</span></div><h3>'+w.title+'</h3><p>'+w.text+'</p><a class="want" href="#calc">Хочу такой · '+w.price+' →</a></div></article>';
+  }).join('');
+
+  // calculator
+  var state = { svc:'landing', ex:{}, urgent:false, first:false };
+  $('spotsBig').textContent = SPOTS_LEFT;
+  if (SPOTS_LEFT <= 0) { $('first').hidden = true; }
+  $('first').textContent = '+ Я из первых ' + SPOTS_LEFT + ' клиентов (−30% за честный отзыв)';
+
+  function cur(){ for (var i=0;i<SERVICES.length;i++) if (SERVICES[i].id===state.svc) return SERVICES[i]; return SERVICES[0]; }
+  function render(){
+    var c = cur();
+    $('svcChips').innerHTML = SERVICES.map(function(s){
+      return '<button type="button" class="chip" data-svc="'+s.id+'" aria-pressed="'+(s.id===c.id)+'">'+esc(s.name)+'</button>';
+    }).join('');
+    var sum = c.base;
+    $('extraList').innerHTML = c.extras.map(function(e){
+      var on = !!state.ex[e[0]]; if (on) sum += e[2];
+      return '<button type="button" class="extra" data-ex="'+e[0]+'" aria-pressed="'+on+'"><span>'+(on?'✓ ':'+ ')+esc(e[1])+'</span><span>+'+fmt(e[2])+'</span></button>';
+    }).join('');
+    var full = Math.round(sum * (state.urgent?1.3:1) / 100) * 100;
+    var disc = state.first && SPOTS_LEFT > 0;
+    var total = disc ? Math.round(full*0.7/100)*100 : full;
+    $('total').textContent = fmt(total);
+    $('old').hidden = !disc; $('old').textContent = fmt(full);
+    $('prepay').textContent = fmt(total/2);
+    $('days').textContent = c.days + (state.urgent ? ' → быстрее' : '');
+    $('urgent').setAttribute('aria-pressed', state.urgent);
+    $('urgent').textContent = (state.urgent?'✓':'+') + ' Срочно — в 1,5 раза быстрее (+30%)';
+    $('first').setAttribute('aria-pressed', disc);
+    $('first').textContent = (disc?'✓':'+') + ' Я из первых ' + SPOTS_LEFT + ' клиентов (−30% за честный отзыв)';
+    var picked = c.extras.filter(function(e){ return state.ex[e[0]]; }).map(function(e){ return e[1]; });
+    state.summary = 'Здравствуйте! Хочу обсудить проект.\nУслуга: ' + c.name +
+      (picked.length ? '\nДополнительно: ' + picked.join(', ') : '') +
+      (state.urgent ? '\nСрочно' : '') + (disc ? '\nХочу скидку −30% за отзыв' : '') +
+      '\nРасчёт с сайта: ' + fmt(total);
+  }
+  $('svcChips').addEventListener('click', function(e){ var b = e.target.closest('[data-svc]'); if (!b) return; state.svc = b.getAttribute('data-svc'); state.ex = {}; render(); });
+  $('extraList').addEventListener('click', function(e){ var b = e.target.closest('[data-ex]'); if (!b) return; var k = b.getAttribute('data-ex'); state.ex[k] = !state.ex[k]; render(); });
+  $('urgent').addEventListener('click', function(){ state.urgent = !state.urgent; render(); });
+  $('first').addEventListener('click', function(){ state.first = !state.first; render(); });
+  // copy the estimate so the client can paste it into Telegram
+  $('sendCalc').addEventListener('click', function(){
+    try { navigator.clipboard.writeText(state.summary).then(function(){ $('copied').hidden = false; }); } catch(_) {}
+  });
+  render();
+  $('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
